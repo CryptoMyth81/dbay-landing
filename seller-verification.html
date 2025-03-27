@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller Verification - dBay.market</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    label {
+      font-weight: bold;
+    }
+    button {
+      background: #ff6a00;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Apply to Become a Verified Seller</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="wallet">ICP Wallet Address</label>
+      <input type="text" id="wallet" name="wallet" required />
+
+      <label for="bio">What do you plan to sell?</label>
+      <textarea id="bio" name="bio" rows="4"></textarea>
+
+      <label for="id">Upload Government ID</label>
+      <input type="file" id="id" name="id" accept="image/*,application/pdf" required />
+
+      <label for="selfie">Upload Selfie</label>
+      <input type="file" id="selfie" name="selfie" accept="image/*" required />
+
+      <p class="note">Your information will be securely submitted to our AI-powered verification system (powered by Decide AI).</p>
+
+      <button type="submit">Submit Verification</button>
+    </form>
+  </div>
+</body>
+</html>
