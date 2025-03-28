@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>List an Item - dBay.market</title>
+  <link rel="icon" href="/favicon_32x32.png" type="image/png" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f1f3f6, #e4f0fb);
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: linear-gradient(to right, #5c2d91, #007cf0);
+      padding: 12px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    nav a {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      background: white;
+      color: #5c2d91;
     }
     .container {
       max-width: 700px;
-      margin: auto;
+      margin: 40px auto;
       background: white;
       padding: 30px;
       border-radius: 12px;
@@ -23,7 +48,7 @@
       margin-bottom: 10px;
     }
     p.crypto-note {
-      color: #ff6a00;
+      color: #5c2d91;
       text-align: center;
       font-weight: bold;
       margin-bottom: 30px;
@@ -50,7 +75,7 @@
     }
     button {
       margin-top: 30px;
-      background-color: #ff6a00;
+      background-color: #5c2d91;
       color: white;
       padding: 14px;
       border: none;
@@ -59,32 +84,52 @@
       width: 100%;
       cursor: pointer;
     }
+    .link-btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .link-btn a {
+      background-color: #ff2e88;
+      color: white;
+      padding: 14px 24px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/list-an-item.html">List an Item</a>
+    <a href="/seller-verification.html">Seller Verification</a>
+    <a href="/buyer-verification.html">Buyer Verification</a>
+  </nav>
+
   <div class="container">
     <h2>List an Item for Sale or Auction</h2>
     <p class="crypto-note">This is a crypto-only marketplace. All transactions are conducted in ICP.</p>
-    <div style="text-align: center; margin-top: 30px;">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwZr7o46TClNeEJUq0N0VxK4EvNiG-50fO-skrE4wiTERL6Q/viewform?usp=dialog" target="_blank" style="
-    background-color: #ff6a00;
-    color: white;
-    padding: 14px 24px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;">
-    🛒 Submit Listing Form
-  </a>
-</div>
+
+    <div class="link-btn">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwZr7o46TClNeEJUq0N0VxK4EvNiG-50fO-skrE4wiTERL6Q/viewform?usp=dialog" target="_blank">
+        🛒 Submit Listing Form
+      </a>
+    </div>
   </div>
-  <footer style="margin-top: 40px; text-align: center; font-size: 0.9rem; color: #555;">
-  © 2025 dBay.market — Built on the Internet Computer |
-  <a href="/buyer-verification.html" style="color: #0099ff; text-decoration: none;">Buyer Verification</a> |
-  <a href="/seller-verification.html" style="color: #0099ff; text-decoration: none;">Seller Verification</a> |
-  <a href="/list-an-item.html" style="color: #0099ff; text-decoration: none;">List an Item</a>
-</footer>
+
+  <footer>
+    © 2025 dBay.market — Built on the Internet Computer |
+    <a href="/buyer-verification.html" style="color: #5c2d91; text-decoration: none;">Buyer Verification</a>
+  </footer>
 
 </body>
 </html>
