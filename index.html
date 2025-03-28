@@ -9,23 +9,32 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffe08a, #ff9f80);
+      background: linear-gradient(135deg, #f1f3f6, #e4f0fb);
       color: #222;
       margin: 0;
       padding: 0;
     }
     nav {
-      background: #fff;
-      padding: 10px 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      background: linear-gradient(to right, #5c2d91, #007cf0);
+      padding: 12px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 16px;
       font-weight: bold;
+      font-size: 0.95rem;
     }
     nav a {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: white;
       text-decoration: none;
-      color: #333;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      background: white;
+      color: #5c2d91;
     }
     .content {
       display: flex;
@@ -61,13 +70,26 @@
       border: 1px solid #ccc;
     }
     button {
-      background-color: #ff6a00;
+      background-color: #5c2d91;
       color: white;
       border: none;
       padding: 12px;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+    }
+    .cta-link {
+      margin-top: 40px;
+    }
+    .cta-link a {
+      background-color: #ff2e88;
+      color: white;
+      padding: 14px 24px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
     }
     footer {
       text-align: center;
@@ -79,7 +101,6 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
   <nav>
     <a href="/">Home</a>
     <a href="/list-an-item.html">List an Item</a>
@@ -87,7 +108,6 @@
     <a href="/buyer-verification.html">Buyer Verification</a>
   </nav>
 
-  <!-- Main Content -->
   <div class="content">
     <img src="/logo.png" alt="dBay.market Logo" />
     <h1>dBay.market</h1>
@@ -98,25 +118,14 @@
       <button disabled>Notify Me (Coming Soon)</button>
     </div>
 
-    <div style="text-align: center; margin-top: 40px;">
-      <a href="/seller-verification.html" style="
-        background-color: #ff6a00;
-        color: white;
-        padding: 14px 24px;
-        font-size: 1.1rem;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;">
-        🛍️ Become a Verified Seller
-      </a>
+    <div class="cta-link">
+      <a href="/seller-verification.html">🛍️ Become a Verified Seller</a>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     © 2025 dBay.market — Built on the Internet Computer |
-    <a href="/buyer-verification.html" style="color: #0099ff; text-decoration: none;">Buyer Verification</a>
+    <a href="/buyer-verification.html" style="color: #5c2d91; text-decoration: none;">Buyer Verification</a>
   </footer>
 
 </body>
