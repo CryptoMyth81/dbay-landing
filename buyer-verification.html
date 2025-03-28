@@ -3,27 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buyer Verification - dBay.market</title>
+  <title>Seller Verification - dBay.market</title>
+  <link rel="icon" href="/favicon_32x32.png" type="image/png" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f1f3f6, #e4f0fb);
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: linear-gradient(to right, #5c2d91, #007cf0);
+      padding: 12px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    nav a {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      background: white;
+      color: #5c2d91;
     }
     .container {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 700px;
+      margin: 40px auto;
       background: white;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: center;
     }
     h2 {
       margin-bottom: 20px;
     }
-    a.button {
-      background-color: #ff6a00;
+    p.note {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .link-btn a {
+      background-color: #ff2e88;
       color: white;
       padding: 14px 24px;
       font-size: 1.1rem;
@@ -33,23 +63,39 @@
       display: inline-block;
       margin-top: 20px;
     }
-    p.note {
-      font-size: 0.95rem;
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
       color: #555;
-      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/list-an-item.html">List an Item</a>
+    <a href="/seller-verification.html">Seller Verification</a>
+    <a href="/buyer-verification.html">Buyer Verification</a>
+  </nav>
+
   <div class="container">
-    <h2>Apply to Become a Verified Buyer</h2>
+    <h2>Apply to Become a Verified Seller</h2>
     <p class="note">
-      Buyer verification is optional — but it builds trust and gives you access to premium listings and auctions.
-      Uploading a valid ID and confirming your identity helps us ensure a safer, fraud-free community.
+      Seller verification helps us maintain trust in the marketplace. Please submit your info to be reviewed.
     </p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe24GhUkA9cIagrEKNzMVRG7VjYSaqM_RqnQYluhBO5RJM0LQ/viewform?usp=dialog" target="_blank" class="button">
-      ✅ Start Buyer Verification
-    </a>
+    <div class="link-btn">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIzZMOBQP6Pb8dHzr10GTbUy1KJLYnvDnc5p2RwRNi0Z2f_g/viewform?usp=sharing" target="_blank">
+        ✅ Start Seller Verification
+      </a>
+    </div>
   </div>
+
+  <footer>
+    © 2025 dBay.market — Built on the Internet Computer |
+    <a href="/buyer-verification.html" style="color: #5c2d91; text-decoration: none;">Buyer Verification</a>
+  </footer>
+
 </body>
 </html>
